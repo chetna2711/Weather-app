@@ -1,0 +1,59 @@
+  @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Josefin+Sans&family=Montserrat:wght@600&family=Mooli&family=Oswald:wght@300&family=Poppins:ital,wght@0,400;0,500;1,400&family=Roboto+Condensed&family=Roboto:wght@100;300;400;900&family=Saira+Condensed&family=Young+Serif&display=swap');
+
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Young Serif', serif;
+  }
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cal{
+    background-color: black;
+   margin: 140px;
+    width: 400px;
+    height: 530px;
+    border: 1px solid black;
+    border-radius: 20px;
+  }
+
+  .display{
+    width: 320px;
+    height: 65px;
+    margin: 30px 40px;
+    
+    background-color: azure;
+    font-size: 25px;
+    padding-left: 270px;
+  }
+
+  .main-part{
+    margin: 0px 38px;
+  }
+
+  .main-part button{
+    width: 70px;
+    height: 65px;
+    font-size: 26px;
+    margin: 5px 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: azure;
+    cursor: pointer;
+  }
+
+   #clr{
+    background-color: red;
+    color: white;
+  }
+
+  #equal{
+    background-color: red;
+    width: 310px;
+    color: white;
+  }

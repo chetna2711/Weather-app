@@ -1,0 +1,163 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Josefin+Sans&family=Montserrat:wght@600&family=Mooli&family=Oswald:wght@300&family=Poppins:ital,wght@0,400;0,500;1,400&family=Roboto+Condensed&family=Roboto:wght@300;400;900&family=Saira+Condensed&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   background: #f3f3ef;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   height: 100vh;
+   width: 100vw;
+   font-family: 'Josefin Sans', sans-serif;
+}
+
+html{
+    font-size: 100%;
+    height: 100%;
+    background: #eee;
+}
+
+.box{
+    width: 25vw;
+    /* height: 60vh; */
+    border-radius: 20px;
+    background: #a5bbdd;
+    box-shadow: 0 0.2rem 3rem rgb(0,0 0,0.2);
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0,0,0);
+    min-width: 20rem;
+    min-height: 25rem;
+    box-shadow: 8px 8px 6px 4px #697b98;
+}
+
+.wave{
+     opacity: 0.3;
+     position: absolute;
+     top: 120%;
+     left: 50%;
+     background: white;
+     width: 50rem;
+     height: 50rem;
+     margin-left:-25rem;
+     margin-top: 20rem;
+     transform-origin: 50% 48%;
+     border-radius:43% ;
+     animation: drift 3000ms infinite linear ;
+     z-index: 1;
+
+}
+
+.wave-three{
+    animation: drift 5000ms infinite linear ;
+    opacity: 0.1;
+    z-index: 2 !important;
+}
+
+.wave-two{
+    animation: drift 7000ms infinite linear ;
+    opacity: 0.1;
+    z-index: 3 !important;
+}
+
+.box::after{
+    content: "";
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+    transform: translate3d(0,0,0);
+}
+
+@keyframes drift {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.inputData{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0 0 0;
+    /* box-shadow: 18px 9px 66px 44px #697b98; */
+}
+
+.inputField{
+
+    width: 60%;
+    margin: auto ;
+    border-radius: 5rem;
+    padding: 1rem;
+    outline: none;
+    font-size: 1.5rem;
+}
+
+
+.info{
+    position: absolute;
+    left: 13%;
+     top: 45%;
+}
+
+.location{
+    text-align: center;
+    margin-top: -20px;
+    margin-left: 0px;
+    font-size: 28Px;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.ri-map-pin-line{
+    font-size: 25px;
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+.temp{
+    font-size: 35Px;
+    margin-left: 5px; margin-top: 20px;
+    text-align: center;
+    font-weight: 200;
+}
+
+.tempmin-max{
+    font-size: 20Px;
+    color:red;
+    margin-left: 10px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 200;
+}
+
+.errorMsg{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.ri-temp-cold-fill{
+    font-size: 28px;
+}
+
+.date , .time{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
